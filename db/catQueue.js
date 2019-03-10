@@ -31,6 +31,9 @@ const catData = [
 ]
 
 const catQueue = new Queue;
-catData.forEach(cat => catQueue.enqueue(cat))
+function loadDummy(arr) {
+  arr.forEach(cat => catQueue.enqueue(cat))
+}
+loadDummy(catData);
 
 module.exports = catQueue;

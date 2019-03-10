@@ -31,6 +31,9 @@ const dogData = [
 ]
 
 const dogQueue = new Queue;
-dogData.forEach(dog => dogQueue.enqueue(dog))
+function loadDummy(arr) {
+  arr.forEach(dog => dogQueue.enqueue(dog))
+}
+loadDummy(dogData);
 
 module.exports = dogQueue;
